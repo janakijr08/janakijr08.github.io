@@ -9,6 +9,85 @@
   <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript">
   <meta name="author" content="Janakiraman">
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    .header--logo img {
+  width: 40px;  /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.device-notification--logo img {
+  width: 40px;  /* Adjust the width for the device notification as well */
+  height: auto;
+}
+
+    
+    /* Style for social media icons */
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      font-size: 24px; /* Medium size icons */
+      color: #333;
+      margin: 0 15px; /* Space between icons */
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #0077b5; /* Hover color for LinkedIn */
+    }
+
+    /* New styles for card layout in the third section */
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .col {
+      flex: 1;
+      max-width: 23%; /* Adjusts for 4 cards in 1 row with some gap */
+      margin: 10px;
+    }
+
+    /* Updated card styles */
+    .card {
+      padding: 20px;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      height: 200px; /* Fixed height for all cards */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .col {
+        max-width: 48%; /* For tablets: 2 columns */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .col {
+        max-width: 100%; /* For mobile: 1 column */
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -48,7 +127,22 @@
             <div class="intro">
               <div class="intro--banner">
                 <h1> JANAKIRAMAN <br> I'M A WEB DEVELOPER<br> AND PROGRAMMER</h1>
-               
+                <!-- Social media icons -->
+                <div class="social-icons">
+                  <a href="https://github.com/janakijr08" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/janakiraman-paramanantham-28983b302/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </a>
+                <a href="https://www.youtube.com/@jana08ki" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                </div>
               </div>
             </div>
           </li>
@@ -63,10 +157,9 @@
                         <a href="https://user-mgmt-rouge.vercel.app/usermng.html">
                           <img src="assets/img/logo1.png" alt="Project 1">
                         </a>
-                       
                       </div>
                       <p class="slider--item-title">React + Bootstrap Website</p>
-                      <p class="slider--item-description">Brief description of the project.</p>
+                      <p class="slider--item-description">User Management System using React and Bootstrap for responsive CRUD operations with a modern interface.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
@@ -75,34 +168,58 @@
                         <a href="https://github.com/janakijr08/Bmi_">
                           <img src="assets/img/logo1.png" alt="Project 2">
                         </a>
-
-                        
                       </div>
-                      <p class="slider--item-title">BMI Calculator</p>
-                      <p class="slider--item-description">Brief description of the project.</p>
+                      <p class="slider--item-title">BMI Calculator git code</p>
+                      <p class="slider--item-description">BMI Calculator using HTML, Bootstrap frontend, and Flask backend for calculating and displaying BMI.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <a href="https://github.com/janakijr08/user_mng">
+                        <a href="https://gen-info-6vqe.vercel.app/">
                           <img src="assets/img/logo1.png" alt="Project 3">
                         </a>
                       </div>
-                      <p class="slider--item-title">Github Link</p>
-                      <p class="slider--item-description">Brief description of the project.</p>
+                      <p class="slider--item-title">Serverless Application</p>
+                      <p class="slider--item-description">Serverless application using AWS and React.js for efficient college information collection and management.</p>
+                    </a>
+                  </li>
+                  <!-- New fourth project -->
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="https://github.com/janakijr08/another-project">
+                          <img src="assets/img/logo1.png" alt="Project 4">
+                        </a>
+                      </div>
+                      <p class="slider--item-title">Project 4 </p>
+                      <p class="slider--item-description">Description of the fourth project, showcasing skills or technologies used in this work.</p>
                     </a>
                   </li>
                 </ul>
                 <div class="slider--prev">
-                  <!-- SVG code for previous button -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
                 </div>
                 <div class="slider--next">
-                  <!-- SVG code for next button -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
                 </div>
+
+
               </div>
             </div>
           </li>
+          
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
@@ -113,16 +230,34 @@
                   </span>
                 </a>
               </div>
-              <div class="about--options">
-                <h3>Education</h3>
-                <p><strong>X:</strong> vetri vikaas, Namakkal, TN - State board - 93% (2019)</p>
-                <p><strong>XII:</strong> vetri vikaas, Namakkal, TN - State board - 93.5% (2021)</p>
-                <p><strong>UG:</strong> B-Tech Information Technology - Thiagarajar College of Engineering, Madurai, TN (2021 - Present)</p>
-                <p><strong>SKILLS:</strong> HTML, CSS, JavaScript, React, Bootstrap, Java, MongoDB, MySQL AWS, Firebase</p>
-              
-            
-              
-             
+              <!-- Cards Layout -->
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <h3>X:</h3>
+                    <p>
+                       vetri vikaas, Namakkal, TN - State board - 93% (2019)</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <h3>XII:</h3>
+                    <p> vetri vikaas, Namakkal, TN - State board - 93.5% (2021)</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <h3>UG</h3>
+                    <p> B-Tech Information Technology - Thiagarajar College of Engineering, Madurai, TN (2021 - Present)</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <h3>Skills:</h3>
+                    <p> HTML, CSS, JavaScript, React, Bootstrap, Java, MongoDB, MySQL, AWS, Firebase</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
           <li class="l-section section">
@@ -132,18 +267,15 @@
                   <div class="modal--information">
                     <p>Thiagarajar College of Engineering, Madurai, TN, India</p>
                     <a href="mailto:janakiraman@gmail.com">janakiramanparamanantham@gmail.com</a>
-                    <a href="tel:+917708223227">+91 90251 80240 </a>
+                    <a href="tel:+91 9025180240">+91 90251 80240</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="#0">resume</a></li>
-                    <li><a href="mailto:janakiraman@gmail.com">Contact me</a></li>
+                    <li><a href="mailto:janakiramanparamanantham@gmail.com">Contact me</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
-          
-          
         </ul>
       </div>
     </div>
