@@ -1,0 +1,12 @@
+git status
+git add .
+git commit -m "Updated code to fix bug or add feature"
+git pull origin main
+git push origin main
+
+
+git init
+git remote add origin https://github.com/janakijr08/repository-name.git
+git add .
+git commit -m "Initial commit or description of changes"
+git push origin main
